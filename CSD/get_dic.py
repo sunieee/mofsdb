@@ -87,18 +87,6 @@ def get_dic(simple=False):
             with open(filename, 'w') as f:
                 f.write(to_str(dic))
 
-
-def get_cif():
-    for MOF in MOFS:
-        MOF = MOF.strip()
-        print(MOF)
-        filename = f"/mnt/data1/csd/cif/all/{MOF}.cif"
-        if not os.path.exists(filename):
-            entry = csd_reader.entry(MOF)
-            with open(filename, "w") as f:
-                f.write(entry.to_string("cif"))
-
-
 def generate_example(identifier):
     dic = todic(identifier)
     with open('all.json', 'w') as f:
@@ -122,6 +110,5 @@ if __name__ == "__main__":
     # generate_example(identifiers[0])
     # get_dic(False)
     # get_dic(True)
-    # get_cif()
     for MOF in MOFS:
         get_smiles(MOF.strip())

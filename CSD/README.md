@@ -1,8 +1,6 @@
 # CSD
 
-CSD数据库调研见：http://mofs.actvis.cn/blog/post/admin/CSD%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5-%E5%85%A5%E5%BA%93
-
-CSD官网中文API、CSD下载须知见其他两个markdown
+[CSD数据库调研点击此处](http://mofs.actvis.cn/blog/post/admin/CSD%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5-%E5%85%A5%E5%BA%93)，CSD官网中文API、CSD下载须知见其他两个markdown
 
 ## CSD数据库信息
 
