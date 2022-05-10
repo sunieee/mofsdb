@@ -17,9 +17,9 @@ sqlalchemy教程：https://www.liaoxuefeng.com/wiki/1016959663602400/10178038574
 
 mysql的连接：`engine = create_engine('mysql+mysqlconnector://root:digitalmofs@actvis.cn:9049/mofsdb')`
 
-## 使用说明
-
 ## CSD
-## QMOF
-## CoRE
+## division
+## ligand
 
+
+## 结构操作总结
