@@ -1,18 +1,8 @@
-# structure
+# Graph
 
-## 获取结构
+探究如何讲cif转换为图结构以进行下游任务：
 
-用于从CSD API中提取结构文件，这里提取的是`Non-disordered_MOF_subset.gcd`中的MOF（MOF的有序子集，共84898个，具体见[CSD数据库调研](http://mofs.actvis.cn/blog/post/admin/CSD%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5-%E5%85%A5%E5%BA%93)）
-
-输出到`/mnt/data1/csd/cif/all`目录下，获取代码见`get_cif.py`
-
-下载链接：http://actvis.cn/data1/csd/cif
-
-![image-20220505182405725](https://gitee.com/sun__ye/gallery/raw/master/g1121/202205051824326.png)
-
-这些cif文件以`<mof-id>.cif`命名，这些MOF的CSD参数数据见CSD子仓库
-
-## cif文件转图数据：QMOF方案
+## 转换为图结构：QMOF方案
 
 我们使用最为通用的cif格式来保存结构信息，运行时再生成图。生成图的过程使用了QMOF处理图的流程，见`data.py/CIFData`（依赖：torch, pymatgen, ase）
 
@@ -100,6 +90,3 @@ torch.Size([184, 12]) tensor([[157, 158, 155,  ..., 138, 142, 139],
 ```
 
 第一个是nbr_fea邻居特征，共41维，第二个是nbr_fea_idx，每个原子与最近的12个原子相连接（这里并没有科学依据，可能因为QMOF里的GNN算法简化了图结构）
-
-
-

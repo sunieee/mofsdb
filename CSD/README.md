@@ -1,18 +1,26 @@
 # CSD
 
-[CSD数据库调研点击此处](http://mofs.actvis.cn/blog/post/admin/CSD%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5-%E5%85%A5%E5%BA%93)，CSD官网中文API、CSD下载须知见其他两个markdown
+[CSD数据库调研点击此处](http://blog.actvis.cn/blog/post/admin/CSD%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5-%E5%85%A5%E5%BA%93)，CSD官网中文API、CSD下载须知见其他两个markdown
 
 ## CSD数据库信息
 
 包含以下两类信息：
 
 ### 结构
+
 - 为纯字符串，文件格式：cif, xyz
 - 单个大小 5～10kb
 - 可以被ase库读取解析、标准化，并且ase支持读文件，但不支持直接从数据库导入（ASE库：https://wiki.fysik.dtu.dk/ase/）
 
-以文件、而非数据库条目的形式保存：
-- /mnt/data1/csd/cif/all  ：CSD原始cif数据
+用于从CSD API中提取结构文件，这里提取的是`Non-disordered_MOF_subset.gcd`中的MOF（MOF的有序子集，共84898个，具体见[CSD数据库调研](http://blog.actvis.cn/blog/post/admin/CSD%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5-%E5%85%A5%E5%BA%93)）
+
+输出到`/mnt/data1/csd/cif/all`目录下，获取代码见`get_cif()`
+
+下载链接：http://actvis.cn/data1/csd/cif
+
+![image-20220505182405725](https://gitee.com/sun__ye/gallery/raw/master/g1121/202205051824326.png)
+
+这些cif文件以`<mof-id>.cif`命名，这些MOF的CSD参数数据见CSD子仓库
 
 
 ### 可读取属性
