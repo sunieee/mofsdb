@@ -1,8 +1,5 @@
-from turtle import distance
 from rdkit import Chem
 from rdkit.Chem import AllChem
-import numpy as np
-import pandas as pd
 import re
 import os
 import datetime
