@@ -42,17 +42,17 @@ _geom_bond_atom_site_label_2
 _geom_bond_distance
 _geom_bond_site_symmetry_2
 _ccdc_geom_bond_type
-F1     C2       0.03352  .   S
-C2     C3        0.0348  .   D
-C3     C4       0.03468  .   S
-C4     O5       0.03414  .   S
-C4     C6       0.03487  .   D
-C6     F7       0.03353  .   S
-C6     C8       0.03479  .   S
-C8     C9       0.03481  .   D
-C9     O10      0.03415  .   S
-C9     C2       0.03498  .   S
-C3     H11      0.02711  .   S
-O5     H12      0.02441  .   S
-C8     H13      0.02709  .   S
-O10    H14      0.02428  .   S
+F1     C2       1.34075  .   S
+C2     C3       1.39183  .   D
+C3     C4       1.38737  .   S
+C4     O5        1.3657  .   S
+C4     C6       1.39477  .   D
+C6     F7       1.34106  .   S
+C6     C8       1.39162  .   S
+C8     C9        1.3924  .   D
+C9     O10      1.36582  .   S
+C9     C2       1.39903  .   S
+C3     H11      1.08433  .   S
+O5     H12      0.97624  .   S
+C8     H13      1.08353  .   S
+O10    H14      0.97135  .   S

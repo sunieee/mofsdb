@@ -27,7 +27,7 @@ class Atom:
         return "{:7}{:6}{:9}{:9}{:9}  0.00000  Uiso   1.00".format(self.name, self.t, self.x, self.y, self.z)
 
     def distance(self, atom):
-        return round(((self.x - atom.x) ** 2 + (self.y - atom.y) ** 2 + (self.z - atom.z) ** 2) ** 0.5, 5)
+        return round(((self.x - atom.x) ** 2 + (self.y - atom.y) ** 2 + (self.z - atom.z) ** 2) ** 0.5 * rate, 5)
 
 
 class Bond:
@@ -73,7 +73,7 @@ def mol2cif(mol_path, cif_path=None):
         else:
             bonds.append(Bond(mol=line))
     os.remove(tmp_path)
-    print(atoms, bonds)
+    # print(atoms, bonds)
 
     s = f'''data_cif_{os.path.split(mol_path)[-1]}
 _audit_creation_date              {datetime.date.today()}
@@ -112,4 +112,4 @@ _ccdc_geom_bond_type
 
 
 if __name__ == "__main__":
-    print(mol2cif('output_5.mol'))
+    mol2cif('output_5.mol')
