@@ -4,11 +4,11 @@
 
 ## 1. 在文本中挖掘CAS号
 
-![image-20220509144942760](https://gitee.com/sun__ye/gallery/raw/master/g1121/202205091449517.png)
+![image-20220509144942760](https://n.sunie.top:9000/gallery/g1121/202205091449517.png)
 
 从这个pdf文档（http://actvis.cn/data2/share/file ）中提取所有种类的CAS号，我已经转换为txt了（通过https://gitee.com/sun__ye/mofs-paper/tree/master/p2t ），可以使用正则匹配的方法取得CAS号
 
-![image-20220509145447332](https://gitee.com/sun__ye/gallery/raw/master/g1121/202205091454925.png)
+![image-20220509145447332](https://n.sunie.top:9000/gallery/g1121/202205091454925.png)
 
 通过匹配正则表达式为`\d+-\d+-\d+`的pattern得到以下结果，后面加起来数量为1795多于1760,说明可能有重复。
 
@@ -79,12 +79,11 @@ Create Date: 2006-10-25
 ]
 ```
 
-![image-20220509143318370](https://gitee.com/sun__ye/gallery/raw/master/g1121/202205091449816.png)
+![image-20220509143318370](https://n.sunie.top:9000/gallery/g1121/202205091449816.png)
 
 调用API样例：https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/94084-75-0/synonyms/XML
 
 对于任何属性都能很快得到，目前的问题是，我们需要哪些属性？
-
 
 
 
