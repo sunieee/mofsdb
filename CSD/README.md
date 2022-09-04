@@ -18,7 +18,7 @@
 
 下载链接：http://actvis.cn/data1/csd/cif
 
-![image-20220505182405725](https://gitee.com/sun__ye/gallery/raw/master/g1121/202205051824326.png)
+![image-20220505182405725](https://sunie.tpddns.cn:9000/gallery/g1121/202205051824326.png)
 
 这些cif文件以`<mof-id>.cif`命名，这些MOF的CSD参数数据见CSD子仓库
 
